@@ -1,0 +1,14 @@
+*{
+    background-color: lightblue;
+}
+h1{
+    color: red;
+}
+body{
+    text-align: center;
+}
+
+button{
+    background-color: blue;
+    font-weight: bold;
+}

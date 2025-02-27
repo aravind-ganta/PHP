@@ -1,0 +1,21 @@
+body{
+    background-image: url("media/image2.jpg");
+    text-align: center;
+
+}
+h2{
+    margin-top: 50px;
+    color: red;
+}
+form input{
+    margin: 5 px;
+    padding: 5px;
+}
+body a{
+    font-weight: bold;
+    color: greenyellow;
+}
+.button{
+    padding: 5px 10px;
+    margin: 30px;
+}

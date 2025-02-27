@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>User Data</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <h1>User Details</h1>
+    <form id="userForm" action="save.php" method="POST">
+      <label for="userId">User ID:</label>
+      <input type="text" name="userId" placeholder="User Id" required><br><br>
+      <label for="firstName">First Name:</label>
+      <input type="text" name="firstName" placeholder="First Name" required><br><br>
+      <label for="lastName">Last Name:</label>
+      <input type="text" name="lastName" placeholder="Last Name" required><br><br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" placeholder="Email" required><br><br>
+      <label for="gender">Gender :</label>
+      <input type="text" name="gender" placeholder="Gender" required><br><br>
+      <label for="address">Address :</label>
+      <input type="text" name="address" placeholder="Address" required><br><br>
+      <label for="bio">Bio :</label>
+      <textarea name="bio" placeholder="Bio"></textarea><br><br>
+      <button type="submit" value="Submit">Submit</button>
+    </form>
+    <div id="userDetails"></div>
+    
+    <script>
+      // AJAX request to the Python API endpoint
+      fetch('/api/user')
+        .then(response => response.json())
+        .then(data => {
+          // Display the user details on the webpage
+          document.getElementById('userDetails').innerHTML = JSON.stringify(data);
+        });
+    </script>
+    
+  </body>
+</html>
+
+

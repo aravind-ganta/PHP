@@ -1,0 +1,19 @@
+body{
+    background-image: url("media/home1.jpg");
+    text-align: center;
+
+}
+body a{
+    font-weight: bold;
+    color: brown;
+}
+body ul li{
+    margin-top: 20px;
+    opacity: 80%;
+}
+
+h1{
+    color: red;
+}
+
+

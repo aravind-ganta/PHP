@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link href="login.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <a href='home.php' class='btn btn-secondary m-2 active' role='button'>Home</a>
+    <a href='signup.html' class='btn btn-secondary m-2 active' role='button'>SignUp</a>
+    <h1>Login</h1>
+    <?php if (isset($error)) { ?>
+        <p><?php echo $error; ?></p>
+    <?php } ?>
+    <form method="POST" action="login.php">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required>
+        <br>
+        <input class="button" type="submit" value="Login">
+    </div>
+    <p>Forgot your password? <a href="forget_password.html">Click here to reset it</a>.</p>
+    </form>
+    
+</body>
+</html>
